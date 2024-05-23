@@ -410,8 +410,7 @@ main {
   background-color: var(--bg-color-secondary);
   color: var(--important);
   cursor: pointer;
-  height: 40px;
-  width: 40px;
+
 }
 
 .menu-btn,
