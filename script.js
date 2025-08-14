@@ -1,6 +1,7 @@
 const nav = document.querySelector(".nav");
 const navMenu = document.querySelector(".nav-items");
 const btnToggleNav = document.querySelector(".menu-btn");
+const menuIcon = document.querySelector("#menu-icon");
 const workEls = document.querySelectorAll(".work-box");
 const workImgs = document.querySelectorAll(".work-img");
 const mainEl = document.querySelector("main");
@@ -13,12 +14,9 @@ const toggleNav = () => {
   document.body.classList.toggle("lock-screen");
 
   if (nav.classList.contains("hidden")) {
-    btnToggleNav.textContent = "menu";
+    menuIcon.src = "assets/images/menu-icon.svg";
   } else {
-    // When menu is opened after transition change text respectively
-    setTimeout(() => {
-      btnToggleNav.textContent = "close";
-    }, 475);
+    menuIcon.src = "assets/images/close-icon.svg";
   }
 };
 

@@ -403,14 +403,24 @@ main {
   display: block;
   margin-inline-start: auto;
   border: 1px solid var(--border-dark);
-  inline-size: 132px;
-  padding-block: var(--gutter-nano);
+  padding: var(--gutter-nano);
   border-radius: var(--gutter-large);
   text-decoration: none;
   background-color: var(--bg-color-secondary);
   color: var(--important);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.menu-btn img {
+  width: 32px;
+  height: 32px;
+}
+
+body.dark .menu-btn img {
+  filter: invert(1);
 }
 
 .menu-btn,
